@@ -5,17 +5,11 @@ import { useState } from 'react';
 import type { ProductType } from '../core-components/types';
 
 const Home = () => {
-  const [products, _setProducts] = useState<Array<ProductType>>([
+  const [products] = useState<Array<ProductType>>([
     {
       name: 'The @ts-ignore Coder Tee',
       price: 'Rs. 699.00',
-      allImages: [
-        '/1.webp',
-        '/2.webp',
-        '/3.webp',
-        '/4.webp',
-        '/5.webp',
-      ],
+      allImages: ['/1.webp', '/2.webp', '/3.webp', '/4.webp', '/5.webp'],
       varients: [
         {
           name: 'black',
@@ -30,13 +24,7 @@ const Home = () => {
     {
       name: 'The @ts-ignore Coder Tee',
       price: 'Rs. 699.00',
-      allImages: [
-        '/1.webp',
-        '/2.webp',
-        '/3.webp',
-        '/4.webp',
-        '/5.webp',
-      ],
+      allImages: ['/1.webp', '/2.webp', '/3.webp', '/4.webp', '/5.webp'],
       varients: [
         {
           name: 'black',
@@ -51,13 +39,7 @@ const Home = () => {
     {
       name: 'The @ts-ignore Coder Tee',
       price: 'Rs. 699.00',
-      allImages: [
-        '/1.webp',
-        '/2.webp',
-        '/3.webp',
-        '/4.webp',
-        '/5.webp',
-      ],
+      allImages: ['/1.webp', '/2.webp', '/3.webp', '/4.webp', '/5.webp'],
       varients: [
         {
           name: 'black',

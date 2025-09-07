@@ -13,7 +13,11 @@ const Navbar = () => {
   const [isBrand, setIsBrand] = useState<boolean>(false);
 
   useMotionValueEvent(scrollY, 'change', (latest) => {
-    latest > 35 ? setIsBrand(true) : setIsBrand(false);
+    if (latest > 35) {
+      setIsBrand(true);
+    } else {
+      setIsBrand(false);
+    }
   });
 
   const isActive = ({ isActive }: { isActive: boolean }) =>

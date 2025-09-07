@@ -17,7 +17,7 @@ const ProductCard = ({ name, price, allImages, varients }: ProductType) => {
   const [cur, setCur] = useState(1);
 
   useEffect(() => {
-    cur === 0 && setCur(1);
+    if (cur === 0) setCur(1);
     if (isCarousel && containerRef.current) {
       const width = containerRef.current.offsetWidth;
       containerRef.current.scrollTo({
@@ -25,6 +25,7 @@ const ProductCard = ({ name, price, allImages, varients }: ProductType) => {
         behavior: 'auto',
       });
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isCarousel]);
 
   const slide = (action: 'next' | 'prev') => {
@@ -48,9 +49,11 @@ const ProductCard = ({ name, price, allImages, varients }: ProductType) => {
 
   const Varient = (varient: { name: string; img: string }) => {
     const handleHover = (action: 'enter' | 'leave') => {
-      action === 'enter'
-        ? setActiveVarientOnHover(varient)
-        : setActiveVarientOnHover(null);
+      if (action === 'enter') {
+        setActiveVarientOnHover(varient);
+      } else {
+        setActiveVarientOnHover(null);
+      }
     };
 
     return (
