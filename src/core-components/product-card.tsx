@@ -67,7 +67,10 @@ const ProductCard = ({ name, price, allImages, varients }: ProductType) => {
         onMouseLeave={() => handleHover('leave')}
       >
         <div className="border-1 border-transparent rounded-4xl w-6 sm:w-7 h-6 sm:h-7 object-cover overflow-clip">
-          <img src={varient.img} className="w-full h-full" />
+          <img
+            src={import.meta.env.BASE_URL + '/' + varient.img}
+            className="w-full h-full"
+          />
         </div>
       </div>
     );
@@ -93,7 +96,11 @@ const ProductCard = ({ name, price, allImages, varients }: ProductType) => {
           />
         ) : (
           <img
-            src={activeVarientOnHover?.img || activeVarient.img}
+            src={
+              import.meta.env.BASE_URL +
+              '/' +
+              (activeVarientOnHover?.img || activeVarient.img)
+            }
             className="object-cover"
           />
         )}

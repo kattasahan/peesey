@@ -32,7 +32,7 @@ const Carousel = ({
             key={idx}
             className="w-[round(up,100%,1px)] snap-center shrink-0"
           >
-            <img src={img} />
+            <img src={import.meta.env.BASE_URL + '/' + img} />
           </div>
         ))}
       </div>

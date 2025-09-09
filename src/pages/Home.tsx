@@ -9,45 +9,15 @@ const Home = () => {
     {
       name: 'The @ts-ignore Coder Tee',
       price: 'Rs. 699.00',
-      allImages: ['/1.webp', '/2.webp', '/3.webp', '/4.webp', '/5.webp'],
+      allImages: ['1.webp', '2.webp', '3.webp', '4.webp', '5.webp'],
       varients: [
         {
           name: 'black',
-          img: '/1.webp',
+          img: '1.webp',
         },
         {
           name: 'white',
-          img: '/2.webp',
-        },
-      ],
-    },
-    {
-      name: 'The @ts-ignore Coder Tee',
-      price: 'Rs. 699.00',
-      allImages: ['/1.webp', '/2.webp', '/3.webp', '/4.webp', '/5.webp'],
-      varients: [
-        {
-          name: 'black',
-          img: '/1.webp',
-        },
-        {
-          name: 'white',
-          img: '/2.webp',
-        },
-      ],
-    },
-    {
-      name: 'The @ts-ignore Coder Tee',
-      price: 'Rs. 699.00',
-      allImages: ['/1.webp', '/2.webp', '/3.webp', '/4.webp', '/5.webp'],
-      varients: [
-        {
-          name: 'black',
-          img: '/1.webp',
-        },
-        {
-          name: 'white',
-          img: '/2.webp',
+          img: '2.webp',
         },
       ],
     },
