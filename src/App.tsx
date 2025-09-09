@@ -9,12 +9,12 @@ import Contact from './pages/Contact';
 
 function App() {
   return (
-    <div className="bg-background text-foreground font-inter font-light text-sm">
+    <div className="bg-background font-inter font-light text-foreground text-sm">
       <Banner text="10% OFF on the next 100 orders. Use code INIT10."></Banner>
       <Layout>
         <Navbar />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="" element={<Home />} />
           <Route path="/catalog" element={<Catalog />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
